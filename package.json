@@ -1,0 +1,32 @@
+{
+  "name": "litlink_scraper_js",
+  "version": "1.0.1",
+  "description": "lit.link scraper in JS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonjinnorenka/litlink_scraper_js.git"
+  },
+  "keywords": [
+    "lit.link"
+  ],
+  "author": "bonjinnorenka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bonjinnorenka/litlink_scraper_js/issues"
+  },
+  "homepage": "https://github.com/bonjinnorenka/litlink_scraper_js#readme",
+  "dependencies": {
+    "jsdom": "^24.0.0",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.6"
+  }
+}
