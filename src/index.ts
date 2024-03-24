@@ -287,7 +287,7 @@ export class litlink {
             switch(profileLink.profileLinkType){
                 case "image":
                     if(Array.isArray(profileLink.imageLink?.profileImages)&&profileLink.imageLink.profileImages.length>0){
-                        if(i===0&&profileLink.imageLink.profileImages[0].imageUrl === ""){//not normal image Maybe SNS link
+                        if(profileLink.imageLink.profileImages[0].imageUrl === ""){//not normal image Maybe SNS link
                             profileLink.imageLink.profileImages.forEach((profileImage) => {
                                 if(profileImage.urlType!=="others"){//sns name unified by litlink
                                     this.litlink_data.user_links.push({service_name: profileImage.urlType, service_url: profileImage.url});
